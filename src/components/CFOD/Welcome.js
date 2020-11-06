@@ -10,9 +10,13 @@ function Welcome() {
         // Define the welcome section
         <div className="welcome">
             <h2>Namaste and Welcome</h2>
-            <IconButton style={{width:'40px',alignSelf:'center'}} >
-                <FavoriteIcon fontSize="large"/>
-            </IconButton>
+            <div className="welcome_icon">
+                <div className="icon_BorderLeft" />
+                <IconButton  >
+                    <FavoriteIcon fontSize="large"/>
+                </IconButton>
+                <div className="icon_BorderRight" />
+            </div>
                 
             <p>Your catchy intro goes here</p>
         </div>

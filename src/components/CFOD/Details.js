@@ -5,19 +5,43 @@ import './Details.css'
 
 
 function Details({data}) {
+
     return (
 
-        // Define a single reusable Details component
-        <div className="details_container">
+        // The static data is looped through and every even item is displayed in the reverse order
+        <>
+        {data.map((info,index) => (
 
-            <Avatar src={data.image}  />
+            index % 2 === 0 ?
+
+            (<div className="details_container" key={index}>
+
+                <Avatar src={info.image}  />
+
+                <div className="text_info">
+                    <h3>{info.title}</h3>
+                    <p>{info.description}</p>
+                </div>
+
+            </div>)
+            : (
+
+            <div className="details_container" key={index}>
+
 
             <div className="text_info">
-                <h3>{data.title}</h3>
-                <p>{data.description}</p>
+                <h3>{info.title}</h3>
+                <p>{info.description}</p>
             </div>
 
-        </div>
+            <Avatar src={info.image}  />
+
+            </div>
+
+            ))
+        )}
+
+        </>
     )
 }
 

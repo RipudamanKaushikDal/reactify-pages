@@ -10,9 +10,14 @@ function About() {
         // Define the About Us section with links
         <div className="about">
             <h2>About Us</h2>
-            <IconButton style={{alignSelf:"center",width:"40px"}}>
-                <StarIcon fontSize="large"/>
-            </IconButton>
+            <div className="about_icon">
+                <div className="icon_BorderLeft" />
+                <IconButton style={{alignSelf:"center",width:"40px"}}>
+                    <StarIcon fontSize="large"/>
+                </IconButton>
+                <div className="icon_BorderRight" />
+            </div>
+
             <a href="#">Company Info</a>
             <a href="#">Support</a>
             <a href="#">API docs</a>

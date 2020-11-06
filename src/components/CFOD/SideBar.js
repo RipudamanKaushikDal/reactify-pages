@@ -41,6 +41,14 @@ function SideBar({direction,openDrawer,drawerContents}) {
             <hr  style={{color:"white"}}/>
 
 
+            {/* Show Profile Picture on the left menu sidebar */}
+
+            {direction === 'left' && (
+                <div className="profile_avatar" style={{backgroundImage:`url(https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80)`}}>
+                    <h3>Hi, <br/> Doug Thompson</h3>
+                </div>
+            )}
+
             {/* Loop through the data and display items as Menu List*/}
 
             <div className="drawer_contents">

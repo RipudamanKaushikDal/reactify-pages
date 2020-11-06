@@ -16,7 +16,7 @@ function Banner({data}) {
     return (
 
         // Render various banner components with a carousel effect
-        <AutoPlaySwipeableViews interval={4000} >
+        <AutoPlaySwipeableViews interval={4000} enableMouseEvents={true} >
         {data.map(selectedData => (
                 <header className="banner" style={{backgroundImage:`url(${selectedData.image})`}} key={selectedData.title}>
                     <div className="banner_contents">
