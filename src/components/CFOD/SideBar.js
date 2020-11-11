@@ -45,7 +45,7 @@ function SideBar({direction,openDrawer,drawerContents}) {
 
             {direction === 'left' && (
                 <div className="profile_avatar" style={{backgroundImage:`url(https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80)`}}>
-                    <h3>Hi, <br/> Doug Thompson</h3>
+                    <h3>Hi, <br/> Doug Thompson</h3>        
                 </div>
             )}
 
@@ -53,7 +53,7 @@ function SideBar({direction,openDrawer,drawerContents}) {
 
             <div className="drawer_contents">
                 {drawerContents.map(item => (
-                    <>
+                    <div key={item.header}>
                     <p>{item.header}</p>
                     <List>
                         {item.subHeader.map(content => (
@@ -64,7 +64,7 @@ function SideBar({direction,openDrawer,drawerContents}) {
                         ))}
                     </List>
                     <br />
-                    </>
+                    </div>
                 )
                     
                 

@@ -5,8 +5,7 @@
 .drawer .MuiDrawer-paper {
   width: 220px;
   background-color: #111;
-  color: white;
-  opacity: 0.9;
+  color: #6b757d;
 }
 
 .drawer .MuiSvgIcon-root {
@@ -28,7 +27,7 @@
 
 .drawer_contents .list_items:hover {
   text-decoration: none;
-  background-color: tomato;
+  color: white;
 }
 
 .profile_avatar {

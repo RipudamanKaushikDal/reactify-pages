@@ -18,11 +18,11 @@ function About() {
                 <div className="icon_BorderRight" />
             </div>
 
-            <a href="#">Company Info</a>
-            <a href="#">Support</a>
-            <a href="#">API docs</a>
-            <a href="#">Mobile Test</a>
-            <a href="#">Back To Top</a>
+            <a href="http://localhost:3000/">Company Info</a>
+            <a href="http://localhost:3000/">Support</a>
+            <a href="http://localhost:3000/">API docs</a>
+            <a href="http://localhost:3000/">Mobile Test</a>
+            <a href="http://localhost:3000/">Back To Top</a>
         </div>
     )
 }
