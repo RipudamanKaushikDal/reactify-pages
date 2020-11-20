@@ -21,9 +21,9 @@ function Banner({data}) {
         propData.map((selectedData,index) => (
             <header className="banner" style={{backgroundImage:`url(${selectedData.image})`}} key={index}>
                 <div className="banner_contents">
-                    <h1 className="banner_title">
+                    <h4 className="banner_title">
                         {selectedData.title}
-                    </h1>
+                    </h4>
 
                     <div className="banner_description">
                         <h4>{selectedData.description}</h4>
